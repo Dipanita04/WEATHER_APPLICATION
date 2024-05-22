@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Project</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                     <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 24 May
+                </div>
+                <div class="others" id="curent-weather-items">
+                    <div class="weather-item">
+                        <div id="hum">Humidity</div>
+                        <div class="weather-value"> </div>
+                    </div>
+                    <div class="weather-item">
+                        <div id="pressure">Pressure</div>
+                        <div class="weather-value"> </div>
+                    </div>
+                    <div class="weather-item">
+                        <div id="windSpeed">Wind Speed</div>
+                        <div class="weather-value"> </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="d-flex search" role="search"  >
+                <input class="form-control me-2" type="search" placeholder="Enter the name of a city" aria-label="Search" size="50" id="cityInput">
+                <button class="btn btn-outline-success btn-light" id="apiSearch" type="submit">Search</button>
+            </div>
+
+            <div class="cityShow" id="cityOutput"></div>
+            
+
+
+        <div class="current-forecast">
+            <div class="current-forecastitems" id="current-forecast">
+                <div class="currentTemp" id="temperatureDisplay"> </div>
+                <img class="currentICON" id="weatherIcon" src="" alt="">
+            </div>
+        </div>
+        
+
+        </div>
+
+        <div class="future-forecast">
+            <div class="weather-forecast" id="weather-forecast">
+                <div class="weather-forecast-item">
+                    <div class="day">Sun</div>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather-Icon" class="imgclass" id="img1">
+                    <div class="mintemp" id="day1Min">Min - 25.6 &#176; C</div>
+                    <div class="maxtemp" id="day1Max">Max - 25.6 &#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Mon</div>
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather-Icon" class="imgclass" id="img2">
+                    <div class="mintemp" id="day2Min">Min - 25.6 &#176; C</div>
+                    <div class="maxtemp" id="day2Max">Max - 25.6 &#176; C</div>
+                </div>
+                <div class="weather-forecast" id="weather-forecast">
+                    <div class="weather-forecast-item">
+                        <div class="day">Tue</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather-Icon" class="imgclass" id="img3">
+                        <div class="mintemp" id="day3Min">Min - 25.6 &#176; C</div>
+                        <div class="maxtemp" id="day3Max">Max - 25.6 &#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Wed</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather-Icon" class="imgclass" id="img4">
+                        <div class="mintemp" id="day4Min">Min - 25.7 &#176; C</div>
+                        <div class="maxtemp" id="day4Max">Max - 25.6 &#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Thrus</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather-Icon" class="imgclass" id="img5">
+                        <div class="mintemp" id="day5Min">Min - 25.6 &#176; C</div>
+                        <div class="maxtemp" id="day5Max">Max - 25.6 &#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Fri</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather-Icon" class="imgclass" id="img6">
+                        <div class="mintemp" id="day6Min">Min - 25.6 &#176; C</div>
+                        <div class="maxtemp" id="day6Max">Max - 25.6 &#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Sat</div>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather-Icon" class="imgclass" id="img7">
+                        <div class="mintemp" id="day7Min">Min - 25.6 &#176; C</div>
+                        <div class="maxtemp" id="day7Max">Max - 25.6 &#176; C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
